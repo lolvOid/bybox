@@ -51,8 +51,8 @@ nav {
 
 }
 nav.nav-bg {
-  background:  #37AECE;
  
+ background:#42d3bb;
 } 
 
 
@@ -72,19 +72,29 @@ nav.nav-bg {
   line-height: 60px;
   width: 100%;
   background:rgb(66,211,187);
-  text-align: right;
+  text-align: center;
   box-sizing: border-box;
   padding: 15px 24px;
   cursor: pointer;
   color: #fff;
   display: block;
-  img{
+  .profile-img img{
     border-radius:50%;
-    width:30px;
+    width:30px !important;
     height:100%;
   }
+  .center-img img{
+    width:100px;
+    margin-left:100px !important;
+  }
 }
-
+@media(max-width:320px){
+  .center-img{
+    width:60px;
+    float:left;
+    display:none !important;
+  }
+}
 @media(max-width: 786px) {
 
   .logo {

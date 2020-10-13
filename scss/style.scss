@@ -140,10 +140,14 @@ background: rgb(66,211,187);
 
 @media (min-width: 992px){
 .modal-lg, .modal-xl {
-    max-width: 1080px !important;
+    max-width: 880px !important;
 }
 }
-
+@media(max-width: 420px){
+  .modal-content{
+    max-width:100%;
+  }
+}
 .form-border{
   
   border-left-width: 0px;
@@ -177,5 +181,27 @@ border-color:rgb(212, 212, 212) !important;
 @media(max-width:768px){
   .section-height{
     height:100% !important;
+  }
+}
+
+.dropdown-menu {
+  font-size:15px !important;
+  height:130px !important;
+  width:50px !important;
+  border-color:#fff !important;
+  border-radius:10% !important;
+}
+.dropdown-item {
+  padding-top:1px !important;
+ 
+}
+
+
+
+/*babyform-image*/
+
+@media(max-width:420px){
+  .babyform-image{
+    display:none;
   }
 }
