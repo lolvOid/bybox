@@ -1,0 +1,137 @@
+@import '../utilities/variables';
+nav {
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index:99;
+  display: block;
+  line-height: 30px;
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 10px;
+}
+  ul {
+    line-height: 40px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+   
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+    li {
+      color: #fff;
+      display: inline-block;
+      padding: 16px 40px;
+      img{
+        width:50px;
+        height:50px;
+        border-radius:50%;
+      }
+      a{
+        font-size:15px;
+        font-weight:bold;
+        text-transform:uppercase;
+        color:#000;
+        letter-spacing:0.07em;
+      }
+      
+      a:hover{
+        color:#fff;
+        padding-bottom:5px;
+        
+        border-bottom:2px solid #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  
+
+}
+nav.nav-bg {
+  background:  #37AECE;
+ 
+} 
+
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background:#37AECE;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.profile-nav{
+  line-height: 60px;
+  width: 100%;
+  background:rgb(66,211,187);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  img{
+    border-radius:50%;
+    width:30px;
+    height:100%;
+  }
+}
+
+@media(max-width: 786px) {
+
+  .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+  }
+  nav{
+   
+      background: rgb(66,211,187) !important;
+    
+  }
+  nav ul {
+        max-height: 0px;
+       
+  }
+
+  nav.nav-bg ul {
+        background: #37AECE;
+        li{
+          a{
+            color:#000;
+          }
+        }
+  }
+
+  .showing {
+        max-height: 34em;
+  }
+
+  nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+  }
+
+  .menu-icon {
+        // display: block;
+  }
+  .profile-nav{
+    // display:block;
+  }
+}
+
+.dropdown-menu.show{
+  -webkit-box-shadow: 9px 10px 17px -6px rgba(0,0,0,0.24);
+-moz-box-shadow: 9px 10px 17px -6px rgba(0,0,0,0.24);
+box-shadow: 9px 10px 17px -6px rgba(0,0,0,0.24);
+}
