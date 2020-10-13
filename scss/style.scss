@@ -8,13 +8,23 @@
 @import 'components/buttons.scss';
 @import 'components/slider.scss';
 @import 'components/footer.scss';
+html{
+  overflow-x:hidden;
+}
 body {
   font-family: "Poppins",sans-serif;
   font-weight: lighter;
   overflow-x:hidden;
   background:$white;
 }
-
+@media(max-width:768px){
+  body{overflow-x: hidden;}
+}
+@media(max-width:768px){
+  .hero{
+    width:80%;
+  }
+}
 .hero{
   width: 100%;
  
@@ -148,6 +158,12 @@ border-color:rgb(212, 212, 212) !important;
 .baby-image{
 
 }
+@media(max-width:768px){
+  .section-image{
+    max-width:150px !important;
+
+  }
+}
 
 @media(max-width:768px){
   .baby-image{
@@ -156,5 +172,10 @@ border-color:rgb(212, 212, 212) !important;
     justify-content: center;
     max-width:200px !important;
   
+  }
+}
+@media(max-width:768px){
+  .section-height{
+    height:100% !important;
   }
 }
