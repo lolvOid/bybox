@@ -128,6 +128,13 @@ nav.nav-bg {
     display: none !important;
   }
 }
+@media (max-width: 425px) {
+  .center-img {
+    width: 60px;
+    margin-left: 70px !important;
+    display: none !important;
+  }
+}
 @media (max-width: 786px) {
   .logo {
     position: fixed;
@@ -136,6 +143,7 @@ nav.nav-bg {
   }
 
   nav {
+    padding-bottom: 10px !important;
     background: #42d3bb !important;
   }
 
@@ -280,8 +288,8 @@ img.vert-move {
 }
 
 .register-btn:hover {
-  background: #ffffff;
-  color: #4d92b3 !important;
+  background: #04b8af;
+  color: #fff !important;
   transform: scale(1.1);
   box-shadow: 8px 13px 23px -5px rgba(0, 0, 0, 0.33);
 }
@@ -668,6 +676,7 @@ body {
   width: 50px !important;
   border-color: #fff !important;
   border-radius: 10% !important;
+  overflow: hidden;
 }
 
 .dropdown-item {

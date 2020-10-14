@@ -95,6 +95,13 @@ nav.nav-bg {
     display:none !important;
   }
 }
+@media(max-width:425px){
+  .center-img{
+    width:60px;
+    margin-left:70px !important;
+    display:none !important;
+  }
+}
 @media(max-width: 786px) {
 
   .logo {
@@ -103,7 +110,7 @@ nav.nav-bg {
         margin-top: 0;
   }
   nav{
-   
+    padding-bottom: 10px !important                                                   ;
       background: rgb(66,211,187) !important;
     
   }

@@ -45,3 +45,11 @@ $(document).ready(function(){
       
       })
   })
+  $(document).ready(function(){
+    $("#language").hover(function(){
+        var dropdownMenu = $(this).children(".dropdown-menu");
+        if(dropdownMenu.is(":visible")){
+            dropdownMenu.parent().toggleClass("open");
+        }
+    });
+}); 
