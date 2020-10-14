@@ -584,6 +584,11 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 425px) {
+  .remove-flex > div {
+    flex: 0 !important;
+  }
+}
 .main-title {
   color: #000;
   -webkit-text-stroke-width: 0.2px;
@@ -652,6 +657,16 @@ body {
   border-color: #d4d4d4 !important;
 }
 
+@media (max-width: 425px) {
+  .form-border {
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border: 0 0 0 0 !important;
+    border-style: none !important;
+    border-color: #d4d4d4 !important;
+  }
+}
 @media (max-width: 768px) {
   .section-image {
     max-width: 150px !important;
