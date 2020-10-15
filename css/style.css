@@ -4,8 +4,8 @@
   color: #fff;
 }
 
-.text-main {
-  color: #44f9db;
+.text-blue {
+  color: #5EBDEB;
 }
 
 .bg-newcolor {
@@ -182,8 +182,8 @@ nav.nav-bg {
   color: #fff;
 }
 
-.text-main {
-  color: #44f9db;
+.text-blue {
+  color: #5EBDEB;
 }
 
 .bg-newcolor {
@@ -248,8 +248,8 @@ img.vert-move {
   color: #fff;
 }
 
-.text-main {
-  color: #44f9db;
+.text-blue {
+  color: #5EBDEB;
 }
 
 .bg-newcolor {
@@ -600,7 +600,6 @@ body {
   }
 }
 .main-title {
-  color: #000;
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: #fff;
 }
@@ -682,6 +681,10 @@ body {
     max-width: 150px !important;
   }
 }
+.section-image {
+  max-width: 100%;
+}
+
 @media (max-width: 768px) {
   .baby-image {
     margin-left: 80px;

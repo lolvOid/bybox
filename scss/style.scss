@@ -88,7 +88,6 @@ background: $newmain;
 
 .main-title{
 
-  color:$black;
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color:$white;
   
@@ -185,6 +184,9 @@ border-color:rgb(212, 212, 212) !important;
     max-width:150px !important;
 
   }
+}
+.section-image{
+  max-width:100%;
 }
 
 @media(max-width:768px){
