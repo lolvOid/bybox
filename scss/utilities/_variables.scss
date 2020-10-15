@@ -7,7 +7,7 @@ $black:#000;
 $main:#42d3bb;
 $main-light:#44f9db;
 $darkblue:#37AECE;
-$darkgreen:rgb(66,211,187);
+$newmain:#BBFCFA;
 
 /////////////text colors //
 
@@ -18,10 +18,13 @@ $darkgreen:rgb(66,211,187);
 .text-main{
   color:$main-light;
 }
-
+.bg-newcolor{
+  background:#BBFCFA;
+}
 .bg-gradient{
-  background: rgb(66,211,187);
-background: linear-gradient(0deg, rgb(58, 202, 178) -31%, rgb(58, 209, 184) 0%, rgb(54, 228, 199) 100%);
+  background:#BBFCFA;
+//   background: rgb(66,211,187);
+// background: linear-gradient(0deg, rgb(58, 202, 178) -31%, rgb(58, 209, 184) 0%, rgb(54, 228, 199) 100%);
 //   background: rgb(66,211,187);
 // background: linear-gradient(0deg, rgba(66,211,187,1) -31%, rgba(67,222,196,1) 0%, rgba(68,249,219,1) 100%);
 
@@ -43,7 +46,7 @@ box-shadow: 0px 18px 29px 3px rgba(13,94,81,1);
 .card-shadow{
   border-radius: 50px;
 background: $white;
-box-shadow: 0px 6px 3px #38b39f, 
+box-shadow: 0px 5px 8px #38b39f, 
              -10px -10px 60px #4cf3d7;
 }
 .btn.focus, .btn:focus {

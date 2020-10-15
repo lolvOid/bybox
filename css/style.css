@@ -8,9 +8,12 @@
   color: #44f9db;
 }
 
+.bg-newcolor {
+  background: #BBFCFA;
+}
+
 .bg-gradient {
-  background: #42d3bb;
-  background: linear-gradient(0deg, #3acab2 -31%, #3ad1b8 0%, #36e4c7 100%);
+  background: #BBFCFA;
 }
 
 .logo-shadow {
@@ -30,7 +33,7 @@
 .card-shadow {
   border-radius: 50px;
   background: #fff;
-  box-shadow: 0px 6px 3px #38b39f, -10px -10px 60px #4cf3d7;
+  box-shadow: 0px 5px 8px #38b39f, -10px -10px 60px #4cf3d7;
 }
 
 .btn.focus, .btn:focus {
@@ -85,7 +88,7 @@ nav ul li a:hover {
 }
 
 nav.nav-bg {
-  background: #42d3bb;
+  background: #BBFCFA;
 }
 
 .menu-icon {
@@ -103,7 +106,7 @@ nav.nav-bg {
 .profile-nav {
   line-height: 60px;
   width: 100%;
-  background: #42d3bb;
+  background: #BBFCFA;
   text-align: center;
   box-sizing: border-box;
   padding: 15px 24px;
@@ -144,7 +147,7 @@ nav.nav-bg {
 
   nav {
     padding-bottom: 10px !important;
-    background: #42d3bb !important;
+    background: #BBFCFA !important;
   }
 
   nav ul {
@@ -183,9 +186,12 @@ nav.nav-bg {
   color: #44f9db;
 }
 
+.bg-newcolor {
+  background: #BBFCFA;
+}
+
 .bg-gradient {
-  background: #42d3bb;
-  background: linear-gradient(0deg, #3acab2 -31%, #3ad1b8 0%, #36e4c7 100%);
+  background: #BBFCFA;
 }
 
 .logo-shadow {
@@ -205,7 +211,7 @@ nav.nav-bg {
 .card-shadow {
   border-radius: 50px;
   background: #fff;
-  box-shadow: 0px 6px 3px #38b39f, -10px -10px 60px #4cf3d7;
+  box-shadow: 0px 5px 8px #38b39f, -10px -10px 60px #4cf3d7;
 }
 
 .btn.focus, .btn:focus {
@@ -246,9 +252,12 @@ img.vert-move {
   color: #44f9db;
 }
 
+.bg-newcolor {
+  background: #BBFCFA;
+}
+
 .bg-gradient {
-  background: #42d3bb;
-  background: linear-gradient(0deg, #3acab2 -31%, #3ad1b8 0%, #36e4c7 100%);
+  background: #BBFCFA;
 }
 
 .logo-shadow {
@@ -268,7 +277,7 @@ img.vert-move {
 .card-shadow {
   border-radius: 50px;
   background: #fff;
-  box-shadow: 0px 6px 3px #38b39f, -10px -10px 60px #4cf3d7;
+  box-shadow: 0px 5px 8px #38b39f, -10px -10px 60px #4cf3d7;
 }
 
 .btn.focus, .btn:focus {
@@ -290,6 +299,7 @@ img.vert-move {
 .register-btn:hover {
   background: #04b8af;
   color: #fff !important;
+  transition: width 1s, height 1s;
   transform: scale(1.1);
   box-shadow: 8px 13px 23px -5px rgba(0, 0, 0, 0.33);
 }
@@ -550,7 +560,7 @@ body {
   width: 100%;
   height: 700px;
   color: #222222;
-  background: #42d3bb;
+  background: #BBFCFA;
   background-size: cover;
 }
 
