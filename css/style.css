@@ -283,6 +283,10 @@ img.vert-move {
   box-shadow: none !important;
 }
 
+@font-face {
+  font-family: lucita;
+  src: url(../css/lucita-regular-webfont.woff);
+}
 .register-btn {
   background: #559bbb;
   background: linear-gradient(0deg, #4d92b3 -31%, #3a89ad 100%);
@@ -540,14 +544,14 @@ img.vert-move {
     width: 100%;
   }
 }
-html {
-  overflow-x: hidden;
-}
-
 @font-face {
   font-family: lucita;
   src: url(../css/lucita-regular-webfont.woff);
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
@@ -571,6 +575,7 @@ body {
 }
 @media (max-width: 768px) {
   .hero {
+    background-attachment: fixed;
     width: 80%;
     background-image: url("../img/mobilbg.png") !important;
     background-size: cover;
@@ -579,6 +584,7 @@ body {
   }
 }
 .hero {
+  background-attachment: fixed;
   background-image: url("../img/webbg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -629,6 +635,17 @@ body {
   -webkit-text-stroke-color: #fff;
 }
 
+#partnerside {
+  display: none;
+}
+
+#partnerbanner {
+  display: none;
+}
+
+.register-section {
+  z-index: 100;
+}
 .register-section p {
   font-size: 12px;
   letter-spacing: 0.09em;

@@ -53,3 +53,39 @@ $(document).ready(function(){
         }
     });
 }); 
+function showpartners() {
+    var x = document.getElementById("partnerbox");
+    var y = document.getElementById("partnerside");
+    var z = document.getElementById("partnercarousel");
+    var w = document.getElementById("partnerbanner")
+    if (x.style.display === "none") {
+        y.style.display = "none";
+      x.style.display = "block";
+      w.style.display = "none";
+      z.style.display = "block";
+      
+    } else {
+        y.style.display = "block";
+      x.style.display = "none";
+      w.style.display = "block";
+      z.style.display = "none";
+
+    }
+  }
+
+  function addrow() {
+    var x = document.getElementById("addchild");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function removerow() {
+    var x = document.getElementById("addchild");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+  }

@@ -34,6 +34,7 @@ body {
 }
 @media(max-width:768px){
   .hero{
+    background-attachment: fixed;
     width:80%;
     background-image:url("../img/mobilbg.png") !important;
     background-size: cover;
@@ -42,6 +43,7 @@ body {
   }
 }
 .hero{
+  background-attachment: fixed;
   background-image:url("../img/webbg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -113,8 +115,14 @@ color:rgb(34, 34, 34);
   // text-shadow: 0px 5px 3px rgb(0, 104, 104 , 0.4);
 }
 
-
+#partnerside{
+  display:none;
+}
+#partnerbanner{
+  display:none;
+}
 .register-section{
+  z-index:100;
   p{
     font-size: 12px;
     letter-spacing:0.09em;
