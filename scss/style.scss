@@ -181,7 +181,13 @@ border-color:rgb(212, 212, 212) !important;
 }
 @media(max-width:768px){
   .section-image{
-    max-width:150px !important;
+    max-width:200px !important;
+
+  }
+}
+@media(max-width:425px){
+  .section-image{
+    max-width:220px !important;
 
   }
 }

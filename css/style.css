@@ -678,7 +678,12 @@ body {
 }
 @media (max-width: 768px) {
   .section-image {
-    max-width: 150px !important;
+    max-width: 200px !important;
+  }
+}
+@media (max-width: 425px) {
+  .section-image {
+    max-width: 220px !important;
   }
 }
 .section-image {
