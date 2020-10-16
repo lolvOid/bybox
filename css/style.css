@@ -730,4 +730,10 @@ body {
   /* Similar syntax to box-shadow */
 }
 
+.prize-shadow {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.1));
+  /* Similar syntax to box-shadow */
+}
+
 /*# sourceMappingURL=style.css.map */
