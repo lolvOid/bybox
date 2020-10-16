@@ -85,6 +85,19 @@ color:rgb(34, 34, 34);
   z-index:-999;
  
 }
+@media(max-width:425px){
+  .hero-img{ height:800px;
+    position:absolute;
+    filter:blur(9px);
+    background-attachment: fixed;
+    background-image:url("../img/mobilbg.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index:-999;
+   
+  }
+}
 .term-img{ height:2700px !important;
   position:absolute;
   filter:blur(9px);

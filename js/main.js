@@ -90,3 +90,11 @@ function showpartners() {
       x.style.display = "none";
     }
   }
+  function removebtn() {
+    var x = document.getElementById("registeration");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+  }

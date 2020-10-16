@@ -45,7 +45,7 @@
 }
 
 .border-rounded {
-  border-radius: 50px !important;
+  border-radius: 0px !important;
 }
 
 nav {
@@ -230,7 +230,7 @@ nav.nav-bg {
 }
 
 .border-rounded {
-  border-radius: 50px !important;
+  border-radius: 0px !important;
 }
 
 img.vert-move {
@@ -304,7 +304,7 @@ img.vert-move {
 }
 
 .border-rounded {
-  border-radius: 50px !important;
+  border-radius: 0px !important;
 }
 
 @font-face {
@@ -635,6 +635,19 @@ body {
   z-index: -999;
 }
 
+@media (max-width: 425px) {
+  .hero-img {
+    height: 800px;
+    position: absolute;
+    filter: blur(9px);
+    background-attachment: fixed;
+    background-image: url("../img/mobilbg.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: -999;
+  }
+}
 .term-img {
   height: 2700px !important;
   position: absolute;
