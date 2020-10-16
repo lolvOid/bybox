@@ -57,7 +57,8 @@ function showpartners() {
     var x = document.getElementById("partnerbox");
     var y = document.getElementById("partnerside");
     var z = document.getElementById("partnercarousel");
-    var w = document.getElementById("partnerbanner")
+    var w = document.getElementById("partnerbanner");
+    var q = document.getElementById("")
     if (x.style.display === "none") {
         y.style.display = "none";
       x.style.display = "block";

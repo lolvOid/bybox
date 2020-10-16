@@ -1,14 +1,16 @@
 @import '../utilities/variables.scss';
 @import '../components/fonts';
 .register-btn{
+  
   background: rgb(85, 155, 187);
   background: linear-gradient(0deg, rgb(77, 146, 179) -31%, rgb(58, 137, 173) 100%);
   color:#fff;
   border-radius:50px;
   letter-spacing: 0.1em;
     font-family:lucita;
-  
-  padding:15px !important;
+    transition:  0.5s;
+  padding:20px !important;
+  text-align:center;
 }
 .btn{
   color:#fff !important;
@@ -17,7 +19,7 @@
   
   background:#04b8af;
   color:#fff !important;
-  transition:  width 1s,height 1s;
+ 
   transform: scale(1.1);
   box-shadow: 8px 13px 23px -5px rgba(0,0,0,0.33);
 
