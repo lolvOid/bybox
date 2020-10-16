@@ -5,7 +5,7 @@
 }
 
 .text-blue {
-  color: #5EBDEB;
+  color: #3690bd;
 }
 
 .bg-newcolor {
@@ -182,7 +182,7 @@ nav.nav-bg {
 }
 
 .text-blue {
-  color: #5EBDEB;
+  color: #3690bd;
 }
 
 .bg-newcolor {
@@ -248,7 +248,7 @@ img.vert-move {
 }
 
 .text-blue {
-  color: #5EBDEB;
+  color: #3690bd;
 }
 
 .bg-newcolor {
@@ -288,6 +288,8 @@ img.vert-move {
   background: linear-gradient(0deg, #4d92b3 -31%, #3a89ad 100%);
   color: #fff;
   border-radius: 50px;
+  letter-spacing: 0.1em;
+  font-family: lucita;
   padding: 15px !important;
 }
 
@@ -301,6 +303,10 @@ img.vert-move {
   transition: width 1s, height 1s;
   transform: scale(1.1);
   box-shadow: 8px 13px 23px -5px rgba(0, 0, 0, 0.33);
+}
+
+.font-lucita {
+  font-family: lucita;
 }
 
 /* Slider */
@@ -538,10 +544,14 @@ html {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: lucita;
+  src: url(../css/lucita-regular-webfont.woff);
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
-  overflow-x: hidden;
+  overflow: hidden;
   background: #fff;
 }
 
@@ -550,9 +560,22 @@ body {
     overflow-x: hidden;
   }
 }
+@media (max-width: 465px) {
+  .hero {
+    width: 80%;
+    background-image: url("../img/mobilbg.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+}
 @media (max-width: 768px) {
   .hero {
     width: 80%;
+    background-image: url("../img/mobilbg.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
   }
 }
 .hero {
