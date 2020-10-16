@@ -106,7 +106,6 @@ nav.nav-bg {
 .profile-nav {
   line-height: 60px;
   width: 100%;
-  background: #BBFCFA;
   text-align: center;
   box-sizing: border-box;
   padding: 15px 24px;
@@ -557,10 +556,13 @@ body {
   }
 }
 .hero {
+  background-image: url("../img/webbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
+  object-fit: cover;
   height: 700px;
   color: #222222;
-  background: #BBFCFA;
   background-size: cover;
 }
 
