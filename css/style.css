@@ -313,10 +313,10 @@ img.vert-move {
 }
 .register-btn {
   background: #559bbb;
-  background: linear-gradient(0deg, #4d92b3 -31%, #3a89ad 100%);
   color: #fff;
   border-radius: 50px;
   letter-spacing: 0.1em;
+  box-sizing: border-box;
   font-family: lucita;
   transition: 0.5s;
   padding: 20px !important;
@@ -739,13 +739,17 @@ body {
 }
 @media (max-width: 758px) {
   .register-section img {
-    margin-left: 0px;
+    margin-left: 10px !important;
   }
 }
 
 @media (max-width: 768px) {
   .register-section {
     text-align: center !important;
+  }
+
+  .register-section img {
+    margin-left: 10px !important;
   }
 }
 .form-control {

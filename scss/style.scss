@@ -44,6 +44,7 @@ body {
     object-fit:cover;
   }
 }
+
 .hero{
   height:00px;
   filter:blur(10px);
@@ -201,7 +202,7 @@ color:rgb(34, 34, 34);
   }
   @media(max-width:758px){
     img{
-      margin-left:0px;
+      margin-left:10px !important;
     }
   }
 }
@@ -209,6 +210,10 @@ color:rgb(34, 34, 34);
 @media(max-width:768px){
   .register-section{
     text-align:center !important;
+  
+  }
+  .register-section img{
+    margin-left:10px !important
   }
 }
 .form-control{

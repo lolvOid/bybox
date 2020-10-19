@@ -3,10 +3,11 @@
 .register-btn{
   
   background: rgb(85, 155, 187);
-  background: linear-gradient(0deg, rgb(77, 146, 179) -31%, rgb(58, 137, 173) 100%);
+  // background: linear-gradient(0deg, rgb(77, 146, 179) -31%, rgb(58, 137, 173) 100%);
   color:#fff;
   border-radius:50px;
   letter-spacing: 0.1em;
+  box-sizing: border-box;
     font-family:lucita;
     transition:  0.5s;
   padding:20px !important;
