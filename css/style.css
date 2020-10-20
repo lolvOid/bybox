@@ -735,7 +735,7 @@ body {
     flex: 0 !important;
   }
 }
-.main-title {
+.main-title, .section-title {
   -webkit-text-stroke-width: thin;
   -webkit-text-stroke-color: #fff;
 }

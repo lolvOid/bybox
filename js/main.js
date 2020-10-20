@@ -146,35 +146,42 @@ function showpartners() {
     paused: false
 });
 
-intro.from(".hero-img", 1, {
-  scaleX:10,scaleY:10,
-  ease: "easeInOut",
-  
-});
-intro.to(".hero-img", 1, {
-  opacity:1,y:"0",
-  ease: "easeInOut",
-  
-  
-  
-});
 intro.from(".main-title", 1, {
   opacity:0,y:"100",
 });
-intro.to(".main-title", 1, {
-  y:"0%",
-  ease:Power2.easeInOut,
-  onComplete: () => document.querySelector('html').classList.remove('is-loading')
-  
-});
+
 
 intro.from(".baby-hero", 1, {
   y:"-190%",
   ease:Power2.easeInOut,
 });
+
+intro.from(".hero-img", 0.5, {
+  scaleX:10,scaleY:10,
+  ease: "easeInOut",
+ 
+});
+
+
+intro.to(".hero-img", 0.5, {
+  scaleX:1,scaleY:1,
+  ease: "easeInOut",
+  onComplete: () => document.querySelector('html').classList.remove('is-loading')
+ 
+});
 intro.to(".baby-hero", 1, {
   y:"0%",
   ease:Power2.easeInOut,
+  
   onComplete: () => document.querySelector('html').classList.remove('is-loading')
+});
+
+intro.to(".main-title", 1, {
+  y:"0%",
+  ease:Power2.easeInOut,
+  
   
 });
+
+
+
