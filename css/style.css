@@ -312,6 +312,7 @@ img.vert-move {
   src: url(../css/lucita-regular-webfont.woff);
 }
 .register-btn {
+  line-height: 0.5em;
   background: #559bbb;
   color: #fff;
   border-radius: 50px;
@@ -626,7 +627,6 @@ body {
 .hero-img {
   height: 800px;
   position: absolute;
-  filter: blur(9px);
   background-attachment: fixed;
   background-image: url("../img/webbg.png");
   background-size: cover;
