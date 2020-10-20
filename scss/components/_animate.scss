@@ -1,10 +1,9 @@
+
 img.vert-move {
   -webkit-animation: mover 1s infinite  alternate;
   animation: mover 1s infinite  alternate;
-}
-img.vert-move {
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
+  // animation: image-in 4s both;
+  // animation-delay: 500ms;
 }
 @-webkit-keyframes mover {
   0% { transform: translateY(0); }
@@ -13,4 +12,31 @@ img.vert-move {
 @keyframes mover {
   0% { transform: translateY(0); }
   100% { transform: translateY(-5px); }
+}
+
+
+@keyframes image-in {
+  0% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+
+@keyframes text-in {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }

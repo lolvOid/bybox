@@ -1,7 +1,7 @@
 @import '../utilities/variables.scss';
 @import '../components/fonts';
 .register-btn{
-  line-height: 0.5em;
+  line-height: 0.4em;
   background: rgb(85, 155, 187);
   // background: linear-gradient(0deg, rgb(77, 146, 179) -31%, rgb(58, 137, 173) 100%);
   color:#fff;
@@ -9,6 +9,7 @@
   letter-spacing: 0.1em;
   box-sizing: border-box;
     font-family:lucita;
+    font-size:12px;
     transition:  0.5s;
   padding:20px !important;
   text-align:center;

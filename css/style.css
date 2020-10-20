@@ -238,11 +238,6 @@ img.vert-move {
   animation: mover 1s infinite alternate;
 }
 
-img.vert-move {
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 1s infinite alternate;
-}
-
 @-webkit-keyframes mover {
   0% {
     transform: translateY(0);
@@ -257,6 +252,26 @@ img.vert-move {
   }
   100% {
     transform: translateY(-5px);
+  }
+}
+@keyframes image-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+@keyframes text-in {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
   }
 }
 .text-red {
@@ -312,13 +327,14 @@ img.vert-move {
   src: url(../css/lucita-regular-webfont.woff);
 }
 .register-btn {
-  line-height: 0.5em;
+  line-height: 0.4em;
   background: #559bbb;
   color: #fff;
   border-radius: 50px;
   letter-spacing: 0.1em;
   box-sizing: border-box;
   font-family: lucita;
+  font-size: 12px;
   transition: 0.5s;
   padding: 20px !important;
   text-align: center;
@@ -627,6 +643,8 @@ body {
 .hero-img {
   height: 800px;
   position: absolute;
+  animation: image-in 2s both;
+  animation-delay: 500ms;
   background-attachment: fixed;
   background-image: url("../img/webbg.png");
   background-size: cover;
@@ -639,7 +657,7 @@ body {
   .hero-img {
     height: 800px;
     position: absolute;
-    filter: blur(9px);
+    filter: blur(3px);
     background-attachment: fixed;
     background-image: url("../img/mobilbg.png") !important;
     background-size: cover;
@@ -875,6 +893,62 @@ body {
 }
 .terms p {
   color: #3b3b3b;
+}
+
+.offer-form {
+  display: none;
+}
+
+.yes {
+  visibility: visible;
+  background: white;
+}
+
+@keyframes image-in {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes hero-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.main-title {
+  animation: text-in 3s both;
+  animation-delay: 600ms;
+}
+
+.animate-header {
+  animation: text-in 2s both;
+  animation-delay: 600ms;
+}
+
+.animate-hero {
+  animation: hero-in 2s alternate;
+  animation-delay: 600ms;
+}
+
+@keyframes text-in {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -98,3 +98,13 @@ function showpartners() {
       x.style.display = "none";
     }
   }
+
+
+  $('#yes').bind('change',function(){
+    $('#childform_contents').fadeToggle(!$(this).is(':checked'));
+    $('#childform_contents').find("input").val("");
+    $('#childform_contents').find('select option:first').prop('selected',true);
+  });
+  $("#no").bind("change", function() {
+    $('#childform_contents').fadeOut();
+  });

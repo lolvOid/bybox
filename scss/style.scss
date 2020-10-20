@@ -4,7 +4,7 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 @import 'utilities/variables.scss';
-@import 'components/animate.scss';
+@import 'components/animate';
 @import 'components/buttons.scss';
 @import 'components/slider.scss';
 @import 'components/footer.scss';
@@ -77,7 +77,8 @@ color:rgb(34, 34, 34);
 // }9
 .hero-img{ height:800px;
   position:absolute;
- 
+  animation: image-in 2s both;
+  animation-delay: 500ms;
   background-attachment: fixed;
   background-image:url("../img/webbg.png");
   background-size: cover;
@@ -89,7 +90,7 @@ color:rgb(34, 34, 34);
 @media(max-width:425px){
   .hero-img{ height:800px;
     position:absolute;
-    filter:blur(9px);
+    filter:blur(3px);
     background-attachment: fixed;
     background-image:url("../img/mobilbg.png") !important;
     background-size: cover;
@@ -362,5 +363,67 @@ border-color:rgb(212, 212, 212) !important;
   }
   p{
     color:#3b3b3b;
+  }
+}
+
+
+.offer-form{
+  display:none;
+}
+.yes{
+  visibility: visible;
+  background:white;
+}
+
+
+@keyframes image-in {
+  0% {
+    opacity: 0;
+    transform:scale(1);
+  }
+  
+  50% {
+    opacity: 1;
+    transform:scale(1);
+    
+  }
+  
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hero-in {
+  0% {
+   opacity:0;
+   transform:translateY(-1000px);
+  }
+  100% {
+  
+    transform:translateY(0);
+  }
+ 
+}
+.main-title{
+  animation: text-in 3s both ;
+  animation-delay: 600ms;
+  
+}
+.animate-header{
+  animation: text-in 2s both ;
+  animation-delay: 600ms;
+}
+.animate-hero{
+  animation: hero-in 2s alternate ;
+  animation-delay: 600ms;
+}
+@keyframes text-in {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  
+  100% {
+    opacity: 1;
   }
 }
