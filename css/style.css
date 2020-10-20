@@ -741,6 +741,15 @@ body {
   -webkit-text-stroke-color: #fff;
 }
 
+@media (max-width: 425px) {
+  .main-title, .hero-text {
+    font-size: 24px;
+  }
+
+  .hero-text {
+    font-size: 19px;
+  }
+}
 #partnerside {
   display: none;
 }

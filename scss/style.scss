@@ -180,6 +180,14 @@ color:rgb(34, 34, 34);
   
   // text-shadow: 0px 5px 3px rgb(0, 104, 104 , 0.4);
 }
+@media(max-width:425px){
+  .main-title,.hero-text{
+    font-size:24px;
+  }
+  .hero-text{
+    font-size:19px;
+  }
+}
 
 #partnerside{
   display:none;
