@@ -112,7 +112,7 @@ function showpartners() {
 // const heroimg = document.querySelector(".hero-img");
 // const babyhero = document.querySelector(".baby-hero");
 // const hero = document.querySelector("#hero");
-// const title = document.querySelector(".main-title");
+// const title = document.querySelector("#hero-text");
 
 
 // const tx = new TimelineMax();
@@ -145,42 +145,55 @@ function showpartners() {
   var intro = gsap.timeline({
     paused: false
 });
-
-intro.from(".main-title", 1, {
-  opacity:0,y:"100",
-});
-
-
 intro.from(".baby-hero", 1, {
-  y:"-190%",
-  ease:Power2.easeInOut,
-});
-
-intro.from(".hero-img", 0.5, {
-  scaleX:10,scaleY:10,
-  ease: "easeInOut",
+  y:"0",
+  ease:"easeInOut",
  
+  
 });
 
 
-intro.to(".hero-img", 0.5, {
-  scaleX:1,scaleY:1,
-  ease: "easeInOut",
-  onComplete: () => document.querySelector('html').classList.remove('is-loading')
- 
-});
 intro.to(".baby-hero", 1, {
-  y:"0%",
-  ease:Power2.easeInOut,
+  y:"-10%", 
+  ease:"easeInOut",
+  repeat:2,
+  yoyo:true
   
-  onComplete: () => document.querySelector('html').classList.remove('is-loading')
 });
 
-intro.to(".main-title", 1, {
+intro.from("#hero-text", 0.5, {
+  opacity:0,y:"100",
+ 
+}).from(".hero-img", 0.5, {
+  opacity:0,
+  
+  ease: "easeInOut",
+}).from("nav", 0.5, {
+  opacity:0,
+  
+  ease: "easeInOut",
+});
+
+
+
+
+intro.to(".hero-img", 0.3, {
+ opacity:1,
+ ease: "easeInOut",
+  
+  
+  onComplete: () => document.querySelector('html').classList.remove('is-loading')
+ 
+}).to("#hero-text", 1, {
   y:"0%",
+  
   ease:Power2.easeInOut,
   
+}).to("nav", 1, {
+ opacity:1,
   
+  ease:Power2.easeInOut,
+   
 });
 
 

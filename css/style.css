@@ -606,6 +606,7 @@ html {
 }
 
 body {
+  background: #C1FCFA;
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
   overflow: hidden;
@@ -881,6 +882,10 @@ body {
     display: none;
   }
 }
+#hero-text {
+  display: block;
+}
+
 .img-shadow {
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
