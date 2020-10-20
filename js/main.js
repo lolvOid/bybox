@@ -105,6 +105,38 @@ function showpartners() {
     $('#childform_contents').find("input").val("");
     $('#childform_contents').find('select option:first').prop('selected',true);
   });
-  $("#no").bind("change", function() {
+  $("#nok").bind("change", function() {
     $('#childform_contents').fadeOut();
   });
+
+const heroimg = document.querySelector(".hero-img");
+const babyhero = document.querySelector(".baby-hero");
+const hero = document.querySelector("#hero");
+const title = document.querySelector(".main-title");
+
+
+const tx = new TimelineMax();
+const ty = new TimelineMax();
+const tz = new TimelineMax();
+tx.fromTo(
+    heroimg,
+   2,
+    {scaleX:10,scaleY:10},
+    {scaleX:1,scaleY:1},
+    {ease:Power2.easeInOut})
+  
+
+
+ty.fromTo(
+  babyhero,
+  2,
+  {y:"-190%"},
+  {y:"0%",ease:Power2.easeInOut,},"+=0.5")
+
+tz .fromTo(
+  title,
+  3,
+  {opacity:0,y:"100"},
+  {opacity:1,y:"0", onComplete: () => document.querySelector('.content').classList.remove('is-loading')},
+  {ease:Power2.easeInOut,},"+=2.2" ,
+  )

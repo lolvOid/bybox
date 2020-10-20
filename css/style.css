@@ -185,6 +185,17 @@ nav.nav-bg {
   box-shadow: 9px 10px 17px -6px rgba(0, 0, 0, 0.24);
 }
 
+#loading {
+  background: #000 url("img/babyboxlogo.png") no-repeat center center;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -25px 0 0 -25px;
+  z-index: 1000;
+}
+
 .text-red {
   color: #fe6e6e !important;
 }
@@ -643,8 +654,6 @@ body {
 .hero-img {
   height: 800px;
   position: absolute;
-  animation: image-in 2s both;
-  animation-delay: 500ms;
   background-attachment: fixed;
   background-image: url("../img/webbg.png");
   background-size: cover;
@@ -818,6 +827,14 @@ body {
     border-color: #d4d4d4 !important;
   }
 }
+.is-loading {
+  overflow-y: hidden !important;
+}
+
+.baby-hero::after {
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   .section-image {
     max-width: 200px !important;
@@ -914,7 +931,7 @@ body {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1);
   }
 }
 @keyframes hero-in {
@@ -923,14 +940,10 @@ body {
     transform: translateY(-1000px);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
-.main-title {
-  animation: text-in 3s both;
-  animation-delay: 600ms;
-}
-
 .animate-header {
   animation: text-in 2s both;
   animation-delay: 600ms;
