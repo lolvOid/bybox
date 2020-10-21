@@ -142,6 +142,13 @@ function showpartners() {
 //   )
 
 
+if (Cookies.get('noPreloader') === 'true') {
+  intro.hide();  
+  }
+  else {
+  $(window).on('load', function() {
+  Cookies.set('noPreloader', 'true', {expires: 1}); // 1 day cookie
+ 
   var intro = gsap.timeline({
     paused: false
 });
@@ -198,3 +205,6 @@ intro.to(".hero-img", 0.3, {
 
 
 
+
+  });
+  }

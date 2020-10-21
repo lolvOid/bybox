@@ -653,7 +653,7 @@ body {
 }
 
 .hero-img {
-  height: 100vh;
+  height: 800px;
   position: absolute;
   background-attachment: fixed;
   background-image: url("../img/webbg.png");
@@ -683,7 +683,7 @@ body {
     position: absolute;
     filter: blur(3px);
     background-attachment: fixed;
-    background-image: url("../img/webbg.png") !important;
+    background-image: url("../img/mobilbg.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
