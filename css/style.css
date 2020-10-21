@@ -666,7 +666,20 @@ body {
 
 @media (max-width: 425px) {
   .hero-img {
-    height: 800px;
+    height: 100vh;
+    position: absolute;
+    filter: blur(3px);
+    background-attachment: fixed;
+    background-image: url("../img/mobilbg.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: -999;
+  }
+}
+@media (max-width: 320px) {
+  .hero-img {
+    height: 100vh;
     position: absolute;
     filter: blur(3px);
     background-attachment: fixed;
@@ -737,13 +750,15 @@ body {
     flex: 0 !important;
   }
 }
-.main-title, .section-title {
+.main-title,
+.section-title {
   -webkit-text-stroke-width: thin;
   -webkit-text-stroke-color: #fff;
 }
 
 @media (max-width: 425px) {
-  .main-title, .hero-text {
+  .main-title,
+.hero-text {
     font-size: 24px;
   }
 
@@ -766,7 +781,9 @@ body {
   font-size: 12px;
   letter-spacing: 0.09em;
 }
-.register-section h3, .register-section h2, .register-section h1 {
+.register-section h3,
+.register-section h2,
+.register-section h1 {
   font-size: 30px;
   letter-spacing: 0.05em;
   padding-bottom: 10px;
@@ -810,7 +827,8 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .modal-lg, .modal-xl {
+  .modal-lg,
+.modal-xl {
     max-width: 880px !important;
   }
 }
@@ -917,7 +935,11 @@ body {
   text-align: left;
   padding: 30px;
 }
-.terms h1, .terms h2, .terms h3, .terms h4, .terms h5 {
+.terms h1,
+.terms h2,
+.terms h3,
+.terms h4,
+.terms h5 {
   font-size: 20px;
   letter-spacing: 0.1em;
   font-weight: bold;
