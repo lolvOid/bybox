@@ -244,7 +244,7 @@ nav.nav-bg {
   border-radius: 0px !important;
 }
 
-img.vert-move {
+.vert-move {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
@@ -999,6 +999,22 @@ body {
   100% {
     opacity: 1;
   }
+}
+.loading-bg {
+  background: black;
+  width: 100vw;
+  z-index: 200;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-container {
+  top: 50%;
+  left: 50%;
+  align-content: center;
+  justify-content: center;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -143,68 +143,61 @@ function showpartners() {
 
 
 if (Cookies.get('noPreloader') === 'true') {
-  intro.hide();  
+  $('.loading-bg').hide();
+$('.loading-container').show();
+
   }
   else {
   $(window).on('load', function() {
-  Cookies.set('noPreloader', 'true', {expires: 1}); // 1 day cookie
- 
+
+  $('.loading-bg').show().delay(4000).fadeOut();;
+  $('.loading-container').show().delay(4000).fadeOut();;
   var intro = gsap.timeline({
     paused: false
 });
-intro.from(".baby-hero", 1, {
-  y:"0",
-  ease:"easeInOut",
- 
+  intro.from(".baby-hero", 1, {
+    y:"0",
+    ease:"easeInOut",
   
-});
+    
+  });
 
+  intro.to(".baby-hero", 1, {
+    y:"-10%", 
+    ease:"easeInOut",
+    repeat:2,
+    yoyo:true
+    
+  });
 
-intro.to(".baby-hero", 1, {
-  y:"-10%", 
-  ease:"easeInOut",
-  repeat:2,
-  yoyo:true
+  intro.from("#hero-text", 0.5, {
+    opacity:0,y:"100",
   
-});
+  }).from(".hero-img", 0.5, {
+    opacity:0, 
+    ease: "easeInOut",
+  }).from("nav", 0.5, {
+    opacity:0,
+    
+    ease: "easeInOut",
+  });
 
-intro.from("#hero-text", 0.5, {
-  opacity:0,y:"100",
- 
-}).from(".hero-img", 0.5, {
-  opacity:0,
-  
+  intro.to(".hero-img", 0.3, {
+  opacity:1,
   ease: "easeInOut",
-}).from("nav", 0.5, {
-  opacity:0,
+    
+    
+    onComplete: () => document.querySelector('html').classList.remove('is-loading')
   
-  ease: "easeInOut",
-});
-
-
-
-
-intro.to(".hero-img", 0.3, {
- opacity:1,
- ease: "easeInOut",
-  
-  
-  onComplete: () => document.querySelector('html').classList.remove('is-loading')
- 
-}).to("#hero-text", 1, {
-  y:"0%",
-  
-  ease:Power2.easeInOut,
-  
-}).to("nav", 1, {
- opacity:1,
-  
-  ease:Power2.easeInOut,
-   
-});
-
-
-
+  }).to("#hero-text", 1, {
+    y:"0%", 
+    ease:Power2.easeInOut,
+  }).to("nav", 1, {
+  opacity:1,
+    ease:Power2.easeInOut,  
+  });
 
   });
   }
+
+
