@@ -73,9 +73,7 @@ function showpartners() {
 
     }
   }
-function enablelink(){
-  $(document).ready(function())
-}
+
   function addrow() {
     var x = document.getElementById("addchild");
     if (x.style.display === "none") {
