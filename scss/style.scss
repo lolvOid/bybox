@@ -536,3 +536,11 @@ body {
   position: relative;
   
 }
+
+.img-round {
+border-radius:20px !important;
+}
+.disabled {
+  pointer-events: none;
+  cursor: none;
+}
