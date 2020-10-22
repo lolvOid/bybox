@@ -540,7 +540,17 @@ body {
 .img-round {
 border-radius:20px !important;
 }
-.disabled {
+ .disabled {
   pointer-events: none;
-  cursor: none;
+  cursor: default;
+  text-decoration: none;
+}
+.partner-img{
+  
+}
+.partner-img:hover{
+  box-shadow: 8px 13px 23px -5px rgba(0,0,0,0.33);
+  -ms-box-shadow: 8px 13px 23px -5px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 8px 13px 23px -5px rgba(0,0,0,0.33);
+  -moz-box-shadow: 8px 13px 23px -5px rgba(0,0,0,0.33);
 }

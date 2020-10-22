@@ -156,7 +156,7 @@
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" onclick="addlink()" href="#carouselExampleIndicators" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -166,7 +166,7 @@
          
           <br>
           <button class="btn register-btn text-center btn-sm px-5 pt-2 mt-4  "  data-toggle="modal"
-          id="registeration" onclick="removebtn()" data-target="#specialoffer">Special Offer Register Now</button> 
+          id="registeration" onclick="addlink()" data-target="#specialoffer">Special Offer Register Now</button> 
         </div>   
         <!-- <div class="col-lg-6 mb-1" id="second"> 
           <div class="col-md-12" id="partnerbox">
@@ -189,32 +189,47 @@
           text-center text-shadow  
             pt-3 pb-4 mb-4" data-aos="fade-up"> Partners 
          </h2>
-    
+        
         <div class="row justify-content-center" >      
           <div class=" col-md-4 col-sm-1 col-xs-2">
-            <a class="partner-image" >
-              <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid img-cicrle mb-4  " alt="">
-            </a>       
+            <div id="partner-link">
+
+              <a href="/" onclick="return false;" class="disabled" >
+                <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid  mb-4  " alt="">
+               </a>
+            </div>    
           </div>
           <div class="col-md-4 col-sm-1">
-            <a class="partner-images" href="">
-              <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid img-rounded mb-4  " alt="">
-             </a>
+            <div id="partner-link">
+
+              <a href="/" onclick="return false;"  class="disabled" >
+                <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid  mb-4  " alt="">
+               </a>
+            </div>
           </div>
           <div class="col-md-8">
-            <a class="partner-images" href="">
-              <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid img-rounded mb-4  " alt="">
-             </a>
+            <div id="partner-link">
+
+              <a href="/" onclick="return false;"  class="disabled" >
+                <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid  mb-4  " alt="">
+               </a>
+            </div>
           </div>
           <div class="col-md-8">
-            <a class="partner-images" href="">
-              <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid img-rounded mb-4  " alt="">
-             </a>
+            <div id="partner-link" >
+
+              <a href="/" onclick="return false;"  class="disabled"  >
+                <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid  mb-4  " alt="">
+               </a>
+            </div>
           </div>
           <div class="col-md-8">
-            <a class="partner-images" href="">
-              <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid img-rounded mb-4  " alt="">
-             </a>
+            <div id="partner-link" >
+
+              <a href="/" onclick="return false;" class="disabled"  >
+                <img style="border-radius:10px;" src="https://via.placeholder.com/728x300.png" data-aos="fade-right"   class="img-fluid  mb-4  " alt="">
+               </a>
+            </div>
           </div>
         </div>     
       </div>
@@ -453,7 +468,7 @@
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>   
       </div> -->
       <div class="modal-body">
-        <button type="button" class="close" id="registeration " onclick="showpartners()" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" id="registeration "  data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
         <form>
