@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="is-loading">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
@@ -13,9 +13,21 @@
     <!-- <link rel="stylesheet" href="css/main.css"> -->
 </head>
 <body>
-  
+  <!-- <div class=" main loading-overlay fill-height" style="position:fixed;" >
+    <div class="container" style="height:100%;">
+        <div class="row  align-content-center justify-content-center ">
+            <div class="col-lg-9 col-md-6 col-sm-3 " style="margin-top:20px; margin-bottom:50px;">
+                  <object  data="img/babyboxhero.svg"  class="img-shadow pb-5 d-block mx-auto baby-hero vert-move mt-3 img-fluid" width="200">
+                    Your browser does not support SVG.
+                  </object>
+            
+            </div>  
+        </div>
+    </div>
+</div> -->
+
   <div class="wrapper">
-    <nav class="">
+    <nav class="nav">
       <div class="menu-icon">
          <!-- <i class="fa fa-bars fa-2x"></i> -->
       </div>
@@ -56,13 +68,13 @@
         <div class="btn-group pt-3 float-right">    
           <button type="button" class="btn btn-sm     dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
               <a  style="font-size:15px; " class="px-2 text-blue  " href=""> 
-               John Doe
+               Guest
               </a>          
             <img src="img/defaultavatar.jfif" width="30" style="border-radius: 50%;" class="profile-img" height="30" alt=""> 
           </button>
           <div class="dropdown-menu dropdown-menu-left" >
             <a class="dropdown-item" href="#">LuckyDraw</a>
-            <a class="dropdown-item" href="#">Logout</a>           
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Log In </a>           
           </div>
         </div>
       </div>
@@ -92,9 +104,9 @@
      <div class="hero-img"></div>
     <div class="container" style="z-index:2;height:100%; margin-top:100px;"> 
       <div class="row align-content-center justify-content-center">
-         <div class="col-lg-9">
+         <div class="col-lg-9" >
           
-          <object  data="img/babyboxhero.svg"  class="img-shadow  baby-hero vert-move mt-4 img-fluid" width="200">
+          <object   data="img/babyboxhero.svg"  style="z-index:999;" class="img-shadow d-block m-auto ml-5  baby-hero vert-move mt-5  img-fluid" width="200">
             Your browser does not support SVG.
           </object>
         
@@ -103,7 +115,7 @@
               text-uppercase  mb-4 main-title font-weight-bold">What is Babybox?</h1>
        
          <p style="letter-spacing: 0.1em; "
-          class="text-blue main-text text-shadow main-title hero-text animate-header font-lucita  font-weight-light  ">
+          class="text-blue main-text text-shadow  main-title hero-text  font-lucita  font-weight-light  ">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quia pariatur deserunt, ipsa consectetur commodi. Consectetur, possimus explicabo. Facilis a voluptatum possimus blanditiis facere at voluptates vero minima ducimus dolor.</p>
        
             </div>
@@ -442,7 +454,9 @@
                   </div>
                   <div class="col-md-12 align-content-center justify-content-center ">
                     <div style="justify-content: flex-end; display: flex;">
-                      <button  style="bottom:0; width:100%; padding:10px;" class="btn register-btn  px-4 mt-4 pt-2 pb-2 "> Send</button> 
+                      <a  style="bottom:0; width:100%; padding:10px;" href="verification.html" class="btn register-btn  px-4 mt-4 pt-2 pb-2 "> Send</a> 
+                      <!-- button for backend integration-->
+                      <!-- <button  style="bottom:0; width:100%; padding:10px;" class="btn register-btn  px-4 mt-4 pt-2 pb-2 "> Send</button>  -->
                     </div>
                   </div>               
                 </div>         
@@ -576,6 +590,38 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-title text-center">
+          <h4 class="main-title text-blue  text-uppercase main-text font-weight-bold  text-center mb-3">Login  </h4>
+        </div>
+        <div class="d-flex mt-5 flex-column text-center">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email1"placeholder="Your email or phone number">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Your password...">
+            </div>
+            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+          </form>
+          
+      
+      </div>
+    </div>
+      <!-- <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+      </div> -->
+  </div>
+</div>
 <!--jquery-->
 <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -601,7 +647,7 @@
 <!-- <script src="js/animation.js"></script> -->
 <script src="js/main.js"></script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

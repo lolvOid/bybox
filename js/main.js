@@ -155,46 +155,61 @@ function addlink(){
 //   }
 
 
-  $(window).on('load', function() {
-    var intro = gsap.timeline({
-      paused: false
-    });
-    intro.from(".baby-hero", 0.5, {
-      y:"0",
-       ease:"easeInOut",    
-    });
-    intro.to(".baby-hero", 0.5, {
-      y:"-10%", 
-      ease:"easeInOut",
-      repeat:2,     
-    });
-   intro.from("#hero-text", 0.5, {
-      opacity:0,y:"100",
-    
-    })
-    .from(".hero-img", 0.5, {
-      opacity:0, 
-      ease: "easeInOut",
-    })
-    .from("nav", 0.5, {
-      opacity:0, 
-      ease: "easeInOut",
-    }); 
-    intro.to(".hero-img", 0.3, {
-    opacity:1,
-    ease: "easeInOut",
-    })
-    .to("#hero-text", 0.5, {
-      y:"0%", 
-      ease:Power2.easeInOut,
-    })
-    .to("nav", 0.5, {
-    opacity:1,
-      ease:Power2.easeInOut,  
-      onComplete: () => document.querySelector('html').classList.remove('is-loading')
-    }); 
-  })
+$(window).load( function(){
 
-  $(document).ready(function(){
-    intro
-  })
+    // $("nav").fadeIn(2000,"slow");
+    $(".nav").delay(1300).animate({ "opacity":  "1" },1300);
+    $(".hero-img").delay(1000).animate({ "opacity":  "1" },1000);
+    $("#hero-text").delay(1000).animate({ "opacity":  "1" },1000);
+    $(".main-title").delay(1000).animate({ "opacity":  "1" },1000);
+ $(".hero-img").fadeIn(1000).fadeIn("ease");
+ $(".baby-img").fadeIn(1000).fadeIn("slow");
+ $(".main-text").delay(1500).animate({ "opacity":  "1" },1500);
+ $(".loading-overlay").delay(2000).fadeOut("ease");
+ setTimeout(function(){
+  $('html').delay(200).removeClass('is-loading')
+}, 1000);
+})
+//   $(window).on('load', function() {
+//     var intro = gsap.timeline({
+//       paused: false
+//     });
+//     intro.from(".baby-hero", 0.5, {
+//       y:"0",
+//        ease:"easeInOut",    
+//     });
+//     intro.to(".baby-hero", 0.5, {
+//       y:"-10%", 
+//       ease:"easeInOut",
+//       repeat:2,     
+//     });
+//    intro.from("#hero-text", 0.5, {
+//       opacity:0,y:"100",
+    
+//     })
+//     .from(".hero-img", 0.5, {
+//       opacity:0, 
+//       ease: "easeInOut",
+//     })
+//     .from("nav", 0.5, {
+//       opacity:0, 
+//       ease: "easeInOut",
+//     }); 
+//     intro.to(".hero-img", 0.3, {
+//     opacity:1,
+//     ease: "easeInOut",
+//     })
+//     .to("#hero-text", 0.5, {
+//       y:"0%", 
+//       ease:Power2.easeInOut,
+//     })
+//     .to("nav", 0.5, {
+//     opacity:1,
+//       ease:Power2.easeInOut,  
+//       onComplete: () => document.querySelector('html').classList.remove('is-loading')
+//     }); 
+//   })
+
+//   $(document).ready(function(){
+//     intro
+//   })
